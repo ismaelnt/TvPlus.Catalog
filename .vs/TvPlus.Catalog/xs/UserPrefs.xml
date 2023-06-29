@@ -1,3 +1,25 @@
-﻿<Properties>
+﻿<Properties GitUserInfo="UsingMD">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.tests.TvPlus.Catalog.UnitTests FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TvPlus.Catalog.UnitTests/UnitTest1.cs">
+    <Files>
+      <File FileName="TvPlus.Catalog.UnitTests/UnitTest1.cs" Line="11" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TvPlus.Catalog">
+            <Node name="tests">
+              <Node name="TvPlus.Catalog.UnitTests" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
