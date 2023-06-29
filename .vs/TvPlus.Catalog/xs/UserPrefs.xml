@@ -1,25 +1,42 @@
-﻿<Properties GitUserInfo="UsingMD">
+﻿<Properties StartupConfiguration="{C6B66E66-A1B6-4426-8A14-BC6362010FEC}|Default" GitUserInfo="UsingMD">
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.tests.TvPlus.Catalog.UnitTests FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TvPlus.Catalog.UnitTests/UnitTest1.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="tests/TvPlus.Catalog.UnitTests/Domain/Entity/Category/CategoryTest.cs">
     <Files>
-      <File FileName="TvPlus.Catalog.UnitTests/UnitTest1.cs" Line="11" Column="1" />
+      <File FileName="tests/TvPlus.Catalog.UnitTests/Domain/Entity/Category/CategoryTest.cs" Line="14" Column="19" />
+      <File FileName="src/TvPlus.Catalog.Domain/Entity/Category.cs" Line="20" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TvPlus.Catalog">
+            <Node name="src">
+              <Node name="TvPlus.Catalog.Domain" expanded="True">
+                <Node name="Entity" expanded="True" />
+              </Node>
+            </Node>
             <Node name="tests">
-              <Node name="TvPlus.Catalog.UnitTests" expanded="True" />
+              <Node name="TvPlus.Catalog.UnitTests" expanded="True">
+                <Node name="Domain" expanded="True">
+                  <Node name="Entity" expanded="True">
+                    <Node name="Category" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="TvPlus.Catalog" selected="True" />
+        </State>
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.tests.TvPlus.Catalog.UnitTests PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
 </Properties>
