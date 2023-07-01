@@ -1,16 +1,23 @@
 ﻿<Properties StartupConfiguration="{C6B66E66-A1B6-4426-8A14-BC6362010FEC}|Default" GitUserInfo="UsingMD">
   <MonoDevelop.Ide.ItemProperties.tests.TvPlus.Catalog.UnitTests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="tests/TvPlus.Catalog.UnitTests/Domain/Entity/Category/CategoryTest.cs">
     <Files>
-      <File FileName="tests/TvPlus.Catalog.UnitTests/Domain/Entity/Category/CategoryTest.cs" Line="20" Column="1" />
+      <File FileName="tests/TvPlus.Catalog.UnitTests/Domain/Entity/Category/CategoryTest.cs" Line="81" Column="1" />
+      <File FileName="src/TvPlus.Catalog.Domain/Exceptions/EntityValidationException.cs" Line="9" Column="1" />
+      <File FileName="src/TvPlus.Catalog.Domain/Entity/Category.cs" Line="38" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TvPlus.Catalog">
-            <Node name="src" expanded="True">
+            <Node name="src">
               <Node name="TvPlus.Catalog.Domain" expanded="True">
                 <Node name="Entity" expanded="True" />
+                <Node name="Exceptions" expanded="True" />
               </Node>
             </Node>
             <Node name="tests">
@@ -28,14 +35,20 @@
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__" />
+        <State name="__root__">
+          <Node name="TvPlus.Catalog">
+            <Node name="tests">
+              <Node name="TvPlus.Catalog.UnitTests">
+                <Node name="TvPlus.Catalog.UnitTests.Domain.Entity.Category">
+                  <Node name="CategoryTest" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

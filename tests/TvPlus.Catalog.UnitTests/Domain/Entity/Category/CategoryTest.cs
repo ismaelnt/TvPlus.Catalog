@@ -1,6 +1,4 @@
-﻿using System.Linq;
-using System.Xml.Linq;
-using TvPlus.Catalog.Domain.Exceptions;
+﻿using TvPlus.Catalog.Domain.Exceptions;
 using DomainEntity = TvPlus.Catalog.Domain.Entity;
 
 namespace TvPlus.Catalog.UnitTests.Domain.Entity.Category;
@@ -121,5 +119,37 @@ public class CategoryTest
         var exception = Assert.Throws<EntityValidationException>(action);
 
         Assert.Equal("Description should be less or equal 10.000 characters long", exception.Message);
+    }
+
+    [Fact(DisplayName = nameof(Activate))]
+    [Trait("Domain", "Category - Aggregates")]
+    public void Activate()
+    {
+        var validData = new
+        {
+            Name = "Category name",
+            Description = "Category description"
+        };
+
+        var category = new DomainEntity.Category(validData.Name, validData.Description, false);
+        category.Activate();
+
+        Assert.True(category.IsActive);
+    }
+
+    [Fact(DisplayName = nameof(Deactive))]
+    [Trait("Domain", "Category - Aggregates")]
+    public void Deactive()
+    {
+        var validData = new
+        {
+            Name = "Category name",
+            Description = "Category description"
+        };
+
+        var category = new DomainEntity.Category(validData.Name, validData.Description, true);
+        category.Deactive();
+
+        Assert.False(category.IsActive);
     }
 }
