@@ -28,11 +28,13 @@
     <None Remove="Domain\" />
     <None Remove="Domain\Entity\" />
     <None Remove="Domain\Entity\Category\" />
+    <None Remove="Common\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Domain\" />
     <Folder Include="Domain\Entity\" />
     <Folder Include="Domain\Entity\Category\" />
+    <Folder Include="Common\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="UnitTest1.cs" />
