@@ -29,12 +29,14 @@
     <None Remove="Domain\Entity\" />
     <None Remove="Domain\Entity\Category\" />
     <None Remove="Common\" />
+    <None Remove="Domain\Validation\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Domain\" />
     <Folder Include="Domain\Entity\" />
     <Folder Include="Domain\Entity\Category\" />
     <Folder Include="Common\" />
+    <Folder Include="Domain\Validation\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="UnitTest1.cs" />
