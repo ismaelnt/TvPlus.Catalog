@@ -14,7 +14,9 @@ public class DomainValidationTest
     public void NotNullOk()
     {
         string value = Faker.Commerce.ProductName();
+
         Action action = () => DomainValidation.NotNull(value, "value");
+
         action.Should().NotThrow();
     }
 
@@ -22,10 +24,37 @@ public class DomainValidationTest
     [Trait("Domain", "DomainValidation - Validation")]
     public void NotNullThrowWhenNull()
     {
-        string value = null;
-        Action action = () => DomainValidation.NotNull(value, "FieldName");
+        string? value = null;
+
+        Action action = () => DomainValidation.NotNull(value, "fieldName");
+
         action.Should()
             .Throw<EntityValidationException>()
             .WithMessage("FieldName should not be null");
+    }
+
+    [Theory(DisplayName = nameof(NotNullOrEmptyThrowWhenEmpty))]
+    [Trait("Domain", "DomainValidation - Validation")]
+    [InlineData("")]
+    [InlineData("  ")]
+    [InlineData(null)]
+    public void NotNullOrEmptyThrowWhenEmpty(string target)
+    {
+        Action action = () => DomainValidation.NotNullOrEmpty(target, "fieldName");
+
+        action.Should()
+            .Throw<EntityValidationException>()
+            .WithMessage("fieldName should not be null or empty");
+    }
+
+    [Fact(DisplayName = nameof(NotNullOrEmptyOk))]
+    [Trait("Domain", "DomainValidation - Validation")]
+    public void NotNullOrEmptyOk()
+    {
+        string target = Faker.Commerce.ProductName();
+
+        Action action = () => DomainValidation.NotNull(target, "fieldName");
+
+        action.Should().NotThrow();
     }
 }
