@@ -1,5 +1,6 @@
 ﻿using TvPlus.Catalog.Domain.SeedWork;
 using TvPlus.Catalog.Domain.Exceptions;
+using TvPlus.Catalog.Domain.Validation;
 
 namespace TvPlus.Catalog.Domain.Entity;
 
@@ -22,16 +23,11 @@ public class Category : AggregateRoot
 
     private void Validate()
     {
-        if (String.IsNullOrWhiteSpace(Name))
-            throw new EntityValidationException($"{nameof(Name)} should not be empty or null");
-        if (Name.Length < 3)
-            throw new EntityValidationException($"{nameof(Name)} should be at leats 3 characters long");
-        if (Name.Length > 255)
-            throw new EntityValidationException($"{nameof(Name)} should be less or equal 255 characters long");
-        if (Description == null)
-            throw new EntityValidationException($"{nameof(Description)} should not be null");
-        if (Description.Length > 10000)
-            throw new EntityValidationException($"{nameof(Description)} should be less or equal 10.000 characters long");
+        DomainValidation.NotNullOrEmpty(Name, nameof(Name));
+        DomainValidation.MinLength(Name, 3, nameof(Name));
+        DomainValidation.MaxLength(Name, 255, nameof(Name));
+        DomainValidation.NotNull(Description, nameof(Description));
+        DomainValidation.MaxLength(Description, 10000, nameof(Description));
     }
 
     public void Activate()
