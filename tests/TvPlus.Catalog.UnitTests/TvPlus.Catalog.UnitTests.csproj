@@ -22,6 +22,7 @@
     </PackageReference>
     <PackageReference Include="FluentAssertions" Version="6.11.0" />
     <PackageReference Include="Bogus" Version="34.0.2" />
+    <PackageReference Include="Moq" Version="4.18.4" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,6 +31,9 @@
     <None Remove="Domain\Entity\Category\" />
     <None Remove="Common\" />
     <None Remove="Domain\Validation\" />
+    <None Remove="Application\" />
+    <None Remove="Application\Category\" />
+    <None Remove="Application\Category\CreateCategory\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Domain\" />
@@ -37,6 +41,9 @@
     <Folder Include="Domain\Entity\Category\" />
     <Folder Include="Common\" />
     <Folder Include="Domain\Validation\" />
+    <Folder Include="Application\" />
+    <Folder Include="Application\Category\" />
+    <Folder Include="Application\Category\CreateCategory\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="UnitTest1.cs" />
